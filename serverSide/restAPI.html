@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table Example</title>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Function</th>
+            <th>Json Parameters</th>
+            <th>Method</th>
+            <th>URL</th>
+            <th>Response</th>
+            <th>CRUD</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>getClients</td>
+            <td>-</td>
+            <td>GET</td>
+            <td>/cl</td>
+            <td>[{_id,firstName,lastName,birthDate,idNumber,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery},...]</td>
+            <td>Read</td>
+        </tr>
+        <tr>
+            <td>getClientById</td>
+            <td>-</td>
+            <td>GET</td>
+            <td>/cl</td>
+            <td>{_id,firstName,lastName,birthDate,idNumber,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery}</td>
+            <td>Read</td>
+        </tr>
+        <tr>
+            <td>addClient</td>
+            <td>{firstName,lastName,birthDate,idNumber,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery}</td></td>
+            <td>POST</td>
+            <td>/cl</td>
+            <td>{_id,firstName,lastNAme,birthDate,idNumber,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery}</td>
+            <td>Create</td>
+        </tr>
+        <tr>
+            <td>updateClient</td>
+            <td>{firstName,lastName,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery}</td></td>
+            <td>PUT</td>
+            <td>/cl/:id</td>
+            <td>{_id,firstName,lastNAme,birthDate,idNumber,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery}</td>
+            <td>Update</td>
+        </tr>
+        <tr>
+            <td>deleteClient</td>
+            <td>-</td>
+            <td>DELETE</td>
+            <td>/cl/:id</td>
+            <td>{_id,firstName,lastNAme,birthDate,idNumber,phone,selfPhone,email,vaccinations:[{date,producer}],positiveRes,recovery}</td>
+            <td>Delete</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+.bottom{
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px; /* Adjust the height as needed */
+    width:100%; /* Set width to 100% for full-width */
+    background-color: #ffffff97; /* Set background color as needed */
+    display: flex;
+    align-items: center;
+    border-top: 2px black solid;
+    margin-top: 30px;
+    
+}
